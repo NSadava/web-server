@@ -18,6 +18,4 @@ app.get("/about",function(req, res){
 app.use(express.static(__dirname + "/public"));
 // console.log(__dirname);
 
-
-
 app.listen(3000);
