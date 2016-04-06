@@ -14,7 +14,6 @@ app.get("/about",function(req, res){
 	res.send("About Sample text");
 });
 
-
 app.use(express.static(__dirname + "/public"));
 // console.log(__dirname);
 
