@@ -4,9 +4,7 @@ var app = express();
 app.get("/",function(req, res){
 	res.send("Hello Express!");
 });
-
-
-
+ 
 /*
 Start Server - node server.js
 open url  - localhost:300
