@@ -1,6 +1,8 @@
 var express = require("express");
 var app = express();
 
+var port = process.env.PORT || 3000;
+
 app.get("/",function(req, res){
 	res.send("Hello Express!");
 });
@@ -17,4 +19,6 @@ app.get("/about",function(req, res){
 app.use(express.static(__dirname + "/public"));
 // console.log(__dirname);
 
-app.listen(3000);
+console.log("Application run on port " + port);
+
+app.listen(port);
